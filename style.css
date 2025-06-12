@@ -1,40 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
+
 body {
-    background-color: #d5e1ef;
-    font-family: 'Outfit', sans-serif;
+	height: 100vh;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(212, 45%, 89%);
+	font-family: "Outfit", sans-serif;
 }
 .container {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 350px;
-    max-height: 700;
-    margin: 48px auto 32px;
-    padding: 10px;
-    border-radius: 20px;
-    text-align: center;
+	width: 100%;
+	max-width: 300px; /* Mobile width */
+	padding: 20px;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 20px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .qr-code {
-    width: 320px;
-    border-radius: 15px;
+	text-align: center;
 }
-.container h3 {
-    padding: 15px;
-    font-weight: 700px;
+.qr-code-image {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
 }
-.container p {
-    font-weight: 400px;
-    margin: 0 22px;
+.qr-code-title {
+	font-size: 1rem;
+	font-weight: 700;
+	color: hsl(218, 44%, 22%);
+	margin-top: 20px;
 }
+.qr-code-description {
+	font-size: 0.5rem;
+	color: hsl(216, 15%, 48%);
+	margin-top: 10px;
+	line-height: 1.5;
+}
+/* Responsive styles */
+@media (min-width: 768px) {
+	.container {
+		max-width: 350px;
+	}
+	.qr-code-title {
+		font-size: 1.5rem;
+	}
+	.qr-code-description {
+		font-size: 1rem;
+	}
+}
+/* Add any additional styles here */
+/* Note: This is a basic style setup. You can expand upon it based on your design needs. */
+
 .attribution {
-    display: flex;
-    justify-content: center;
+    padding-top: 40px;
 }
